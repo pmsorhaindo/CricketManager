@@ -64,12 +64,16 @@ TeamFactory::~TeamFactory() {
 	// TODO Auto-generated destructor stub
 }
 
-TeamFactory::generateTeamStructure() {
+TeamFactory::TeamStructure TeamFactory::generateTeamStructure() {
+	int maxTeam = 23;
+	TeamFactory::TeamStructure rTeam;
+	rTeam.wicketKeepers = rand() % 4/23 + 1; //WicketKeepers>=1
+	rTeam.bowlers = rand() % 8/23 + 5; //Bowlers >=2
+	rTeam.batters = rand() % (rTeam.bowlers-maxTeam) + 1; //Batters >=3
+	rTeam.outFielders = rand() % ((4/5)*maxTeam) + ((1/3) * maxTeam);
+	rTeam.nearFielders = maxTeam - rTeam.outFielders;
 
-	//WicketKeepers>=1
-	//Bowlers >=2
-	//Batters >=3
-
+	return rTeam;
 	//Everyone fields
 	//Near Fielder >=7
 	//Out Fielders >=8

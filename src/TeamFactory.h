@@ -7,6 +7,8 @@
 
 #ifndef TEAMFACTORY_H_
 
+#include "Player.h"
+
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
@@ -15,8 +17,15 @@
 
 class TeamFactory {
 public:
+	struct TeamStructure {
+		int wicketKeepers;
+		int bowlers;
+		int batters;
+		int nearFielders;
+		int outFielders;
+	};
 	TeamFactory();
-	int * generateTeamStructure();
+	TeamFactory::TeamStructure generateTeamStructure();
 	virtual ~TeamFactory();
 };
 
