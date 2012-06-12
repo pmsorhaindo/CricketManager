@@ -7,7 +7,7 @@
 
 #include "Ball.h"
 
-Ball::Ball() {
+Ball::Ball(Player* bow, Player* bat, Field* fld) {
 	// TODO Auto-generated constructor stub
 
 }

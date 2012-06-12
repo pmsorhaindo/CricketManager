@@ -8,21 +8,25 @@
 #ifndef BALL_H_
 
 #include "Constants.h"
+#include "Player.h"
+#include "Field.h"
 
 #define BALL_H_
 
 class Ball {
-public:
-	Ball();
-	virtual ~Ball();
 
 private:
 
 	Constants::Score ballScore;
-	int playerID;
-	int bowlerID;
+	int runs;
+	Player * bowler;
+	Player * batter;
+	Field * fieldState;
 
-
+public:
+	Ball(Player * bow, Player * bat, Field * fld);
+	virtual ~Ball();
+	int getRuns();
 
 };
 

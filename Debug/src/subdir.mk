@@ -7,6 +7,7 @@ CPP_SRCS += \
 ../src/Ball.cpp \
 ../src/Constants.cpp \
 ../src/CricketManager.cpp \
+../src/Field.cpp \
 ../src/Player.cpp \
 ../src/TeamFactory.cpp 
 
@@ -14,6 +15,7 @@ OBJS += \
 ./src/Ball.o \
 ./src/Constants.o \
 ./src/CricketManager.o \
+./src/Field.o \
 ./src/Player.o \
 ./src/TeamFactory.o 
 
@@ -21,6 +23,7 @@ CPP_DEPS += \
 ./src/Ball.d \
 ./src/Constants.d \
 ./src/CricketManager.d \
+./src/Field.d \
 ./src/Player.d \
 ./src/TeamFactory.d 
 
