@@ -54,6 +54,7 @@ public:
 		FITNESS_STAT,
 		NUM_STATS
 	};
+
 	/*static const int CATCH_STAT = 0;
 	static const int THROW_STAT = 1;
 	static const int RUN_SPEED_STAT = 2;
